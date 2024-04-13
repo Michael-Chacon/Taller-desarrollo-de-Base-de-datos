@@ -438,7 +438,7 @@ INSERT INTO producto (codigo, nombre, precio, codigo_fabricante) VALUES (1, 'Dis
     base de datos.
 
     ```sql
-    SELECT DISTINCT (f.codigo) f.nombre
+    SELECT DISTINCT (f.codigo), f.nombre
     FROM fabricante AS f, producto AS p
     WHERE f.codigo = p.codigo_fabricante;
     ```
